@@ -11,6 +11,8 @@ Questions:
   No, because global scope is used as an entry point itself.
 </details>
 
+### Simple Values
+
 <details> 
   <summary>2. How to declare constants and variables in Swift?</summary>
   
@@ -93,6 +95,8 @@ clothesDictionary = [:]
   Yes, but only if type information can be inferred.
 </details>
 
+### Control Flow
+
 <details> 
   <summary>10. What is wrong with this code?
 ```Swift
@@ -135,9 +139,10 @@ if let name = optionalName {
 <details> 
   <summary>13. How to provide a default value when you work with optionals?</summary>
 
-  You can provide value using the **??** operator like this:
+  You can provide default value using the **??** operator like this:
 ```Swift
 let optionalName: String? = nil
 print("Welcome, \(optionalName ?? "User")")
 ```
 </details>
+
