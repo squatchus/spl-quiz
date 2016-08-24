@@ -161,3 +161,36 @@ print("Welcome, \(optionalName ?? "User")")
 
   Yes, it can. Switches support any kind of data and wide variety of comparison operations. For example, you can check if a value has full match with the other one in a **case** statement. Or check if it match with one of the listed options. Or check if it match the specific pattern you can specify with **let** and **where** keywords. If there are several cases that match the value, only the first one will be executed.
 </details>
+
+<details> 
+  <summary>15. How do you iterate over items in a dictionary?</summary>
+
+  One of the ways to do it is to use **for-in** statement, by providing a pair of names to use for each key-value pair:
+```Swift
+let dict = ["key1": "value1", "key2": "value2"]
+for (key, value) in dict {
+  print("key: \(key), value: \(value)")
+}
+```
+</details>
+
+<details> 
+  <summary>16. Swift has several operators to make loops. Which one ensures, that the loop will run at least once?</summary>
+
+```Swift
+repeat {
+  print("This string will be printed at least once")
+} while false
+```
+</details>
+
+<details> 
+  <summary>17. How do you iterate an index over a range?</summary>
+
+Use **..<** in a for-in loop to make a range that omits its upper value, and use **...** to make a range, that includes both values.
+```Swift
+for i in 0..<5 {  // or 'for i in 0...5 {'
+    print("index is: \(i)")
+}
+```
+</details>
