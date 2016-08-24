@@ -1,6 +1,12 @@
 # spl-quiz
 This repository contains set of questions for a self-check based on the book "The Swift Programming Language (Swift 3 beta)".
 
+## Table of Contents
+[A Swift Tour](../blob/master/README.md#a-swift-tour)
+[- Simple Values](../blob/master/README.md#simple-values)
+[- Control Flow](../blob/master/README.md#control-flow)
+[- Functions and Closures](../blob/master/README.md#functions-and-closures)
+
 ## A Swift Tour
 
 Questions:
