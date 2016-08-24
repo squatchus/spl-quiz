@@ -146,3 +146,18 @@ print("Welcome, \(optionalName ?? "User")")
 ```
 </details>
 
+<details> 
+  <summary>13. How to provide a default value when you work with optionals?</summary>
+
+  You can provide default value using the **??** operator like this:
+```Swift
+let optionalName: String? = nil
+print("Welcome, \(optionalName ?? "User")")
+```
+</details>
+
+<details> 
+  <summary>14. Can a **switch** statement contain more then one **case**, that match the value? If so, which one will be executed?</summary>
+
+  Yes, it can. Switches support any kind of data and wide variety of comparison operations. For example, you can check if a value has full match with the other one in a **case** statement. Or check if it match with one of the listed options. Or check if it match the specific pattern you can specify with **let** and **where** keywords. If there are several cases that match the value, only the first one will be executed.
+</details>
