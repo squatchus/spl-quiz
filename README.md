@@ -123,12 +123,21 @@ var myString: String? = "Hello"
 <details> 
   <summary>12. How to unwrapp optional value in an **if** statement and make it available inside the block of code?</summary>
 
-  You can use **if** and **let** keywords together to unwrapp a value:
+  You can use **if** and **let** keywords together to unwrapp a value. If the optional value is **nil**, the conditional is false and the code in braces is skipped.
   ```Swift
 var optionalName: String? = "Bob"
 if let name = optionalName {
   print("Hello, \(name)")
 }
 ```
-  If the optional value is **nil**, the conditional is false and the code in braces is skipped.
+</details>
+
+<details> 
+  <summary>13. How to provide a default value when you work with optionals?</summary>
+
+  You can provide value using the **??** operator like this:
+```Swift
+let optionalName: String? = nil
+print("Welcome, \(optionalName ?? "User")")
+```
 </details>
