@@ -121,17 +121,7 @@ var myString: String? = "Hello"
 </details>
 
 <details> 
-  <summary>12. What does **?** after the type of value mean?
-```Swift
-var myString: String? = "Hello"
-```
-  </summary>
-
-  It means that a value is optional, i.e. it will contain **nil** if value is missing. If you assign **nil** to a value, which isn't optional, compiler will give you an error.
-</details>
-
-<details> 
-  <summary>13. How to unwrapp optional value in an **if** statement and make it available inside the block of code?</summary>
+  <summary>12. How to unwrapp optional value in an **if** statement and make it available inside the block of code?</summary>
 
   You can use **if** and **let** keywords together to unwrapp a value:
   ```Swift
