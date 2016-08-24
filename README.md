@@ -1,5 +1,5 @@
 # spl-quiz
-This repository contains set of tests for a self-check based on the book "The Swift Programming Language (Swift 3 beta)".
+This repository contains set of questions for a self-check based on the book "The Swift Programming Language (Swift 3 beta)".
 
 ## A Swift Tour
 
@@ -90,5 +90,55 @@ clothesDictionary = [:]
 ```
   </summary>
 
-  Yes, if type information can be inferred.
+  Yes, but only if type information can be inferred.
+</details>
+
+<details> 
+  <summary>10. What is wrong with this code?
+```Swift
+var score = 1
+if score print("Score isn't zero")
+```
+  </summary>
+
+  Two things actually. First - in an **if** statement, the conditional must be a **Boolean** expression. Second - braces around the body are required. So, the code should look like this:
+```Swift
+var score = 1
+if score > 0 {
+  print("Score isn't zero")
+}
+```  
+</details>
+
+<details> 
+  <summary>11. What does **?** after the type of value mean?
+```Swift
+var myString: String? = "Hello"
+```
+  </summary>
+
+  It means that a value is optional, i.e. it will contain **nil** if value is missing. If you assign **nil** to a value, which isn't optional, compiler will give you an error.
+</details>
+
+<details> 
+  <summary>12. What does **?** after the type of value mean?
+```Swift
+var myString: String? = "Hello"
+```
+  </summary>
+
+  It means that a value is optional, i.e. it will contain **nil** if value is missing. If you assign **nil** to a value, which isn't optional, compiler will give you an error.
+</details>
+
+<details> 
+  <summary>13. How to unwrapp optional value in an **if** statement and make it available inside the block of code?</summary>
+
+  You can use **if** and **let** keywords together to unwrapp a value:
+  ```Swift
+var optionalName: String? = "Bob"
+if let name = optionalName {
+  print("Hello, \(name)")
+}
+```
+  If the optional value is **nil**, the conditional is false and the code in braces is skipped.
 </details>
