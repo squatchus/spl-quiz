@@ -194,3 +194,69 @@ for i in 0..<5 {  // or 'for i in 0...5 {'
 }
 ```
 </details>
+
+### Functions and Closures
+
+<details> 
+  <summary>18. How do you declare and call a function in Swift?</summary>
+
+Use **func** to declare a function. Call a function by following its name with a list of arguments in parentheses. Use **->** to separate parameter names and types from the function's return type.
+```Swift
+func greet(person: String, day: String) -> String {
+  return "Hello \(person), today is \(day)."
+}
+greet(person: "Bob", day: "Tuesday")
+```
+</details>
+
+<details> 
+  <summary>19. How to modify a function from the answer to previous question, so that you can call it like this:
+```Swift
+greet("Jhon", on: "Wednesday")
+```
+</summary>
+
+By default, functions use their parameter names as labels for their arguments. Write **_** to use no **person** argument label and write a custom label **on** before **day** parameter name:
+```Swift
+func greet(_ person: String, on day: String) -> String {
+  return "Hello \(person), today is \(day)."
+}
+```
+</details>
+
+<details> 
+  <summary>20. How to declare a function, that returns multiple values as a tuple? How to access the elements of a tuple?</summary>
+  
+  The elements of a tuple can be referred to either by name, or by number. A function, that returns a tuple can be declared like this:
+```Swift
+func statsFor(array: [Int]) -> (min: Int, max: Int) {
+  var min = array[0]
+  var max = array[0]
+  //...
+  return (min, max)
+}
+let stats = statsFor(array: [1,2,3])
+print("min: \(stats.min), max: \(stats.1)")
+```
+</details>
+
+<details> 
+  <summary>21. How to declare a function, that takes a variable number of arguments?</summary>
+  
+  Functions, that take a variable number of arguments, collect them into array. This kind of functions can be declared using **...** after the type:
+```Swift
+func sumOf(numbers: Int...) -> Int {
+  var sum = 0
+  //...
+  return sum
+}
+sumOf()
+sumOf(numbers: 1, 2, 3)
+```
+</details>
+
+<details> 
+  <summary>22. Does nested functions have access to variables that were declared in the outer functions?</summary>
+  
+  Yes.
+</details>
