@@ -59,3 +59,36 @@ let widthLabel = label + String(width)
 let widthLabel = "The width is \(width) inches"
 ```
 </details>
+
+<details> 
+  <summary>7. How do you create arrays and dictionaries? How do you access their elements?</summary>
+  
+```Swift
+var colorsArray = ["red", "green", "blue"]
+colorsArray[1] = "yellow"
+var clothesDictionary = ["color": "blue", "size": "M"]
+clothesDictionary["size"] = "L"
+```
+</details>
+
+<details> 
+  <summary>8. What will this code do?
+```Swift
+let const1 = [String]()
+let const2 = [String: Float]()
+```
+  </summary>
+
+  It will create an empty array of Strings and empty dictionary, which keys are Strings and values are Floats.
+</details>
+
+<details> 
+  <summary>9. Can you use this code to create empty arrays and dictionaries?
+```Swift
+colorsArray = []
+clothesDictionary = [:]
+```
+  </summary>
+
+  Yes, if type information can be inferred.
+</details>
