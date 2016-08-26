@@ -6,6 +6,7 @@ This repository contains set of questions for a self-check based on the book "Th
 * [- Simple Values](../master/README.md#simple-values)
 * [- Control Flow](../master/README.md#control-flow)
 * [- Functions and Closures](../master/README.md#functions-and-closures)
+* [- Objects and Classes](../master/README.md#objects-and-classes)
 
 
 ## A Swift Tour
@@ -279,9 +280,52 @@ func nestedFunc(argument: Int) -> Int {
   
 ```Swift
 func funcThatReturnsFunc() -> ((Int) -> Int) {
-// >>> nested function from the questino declared here <<<
+  func nestedFunc(argument: Int) -> Int {
+    return argument*2
+  }
   return nestedFunc
 }
 ```  
 </details>
 
+<details> 
+  <summary>24. How to declare a function that takes the following function as an argument?
+```Swift
+func argumentFunc(argument: Int) -> Int {
+  return argument*2
+}
+```
+  </summary>
+  
+```Swift
+func funcThatTakes(function: ((Int) -> Int)) -> Bool  {
+  function(2)
+  return true
+}
+```
+</details>
+
+<details> 
+  <summary>25. How do you separate an arguments and return type from a body of closure?</summary>
+  
+  You separate it using **in** keyword before body.
+```Swift
+numbers.map({
+  (number: Int) -> Int in
+  return number*2
+})
+```
+</details>
+
+<details> 
+  <summary>26. In which case you can omit the parentheses in a function call like the one below? What does $0 and $1 mean?
+```Swift
+  let sortedNumbers = numbers.sorted { $0 > $1 }
+```
+  </summary>
+  
+  You can omit the parentheses of a function if closure is the only argument to it. $0 and $1 means you refer parameters of a closure by number instead of by name.
+
+</details>
+
+### Objects and Classes
