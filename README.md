@@ -267,3 +267,21 @@ sumOf(numbers: 1, 2, 3)
   
   Yes.
 </details>
+
+<details> 
+  <summary>23. How to declare a function that returns the following function as it's value?
+```Swift
+func nestedFunc(argument: Int) -> Int {
+  return argument*2
+}
+```
+  </summary>
+  
+```Swift
+func funcThatReturnsFunc() -> ((Int) -> Int) {
+// >>> nested function from the questino declared here <<<
+  return nestedFunc
+}
+```  
+</details>
+
