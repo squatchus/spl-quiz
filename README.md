@@ -329,3 +329,41 @@ numbers.map({
 </details>
 
 ### Objects and Classes
+
+<details> 
+  <summary>27. How do you declare a class with custom initializer, properties and methods? How do you create an instance of this class using custom initializer?</summary>
+  
+  You declare a class using **class** keyword and add an initialzer to it with **init** keyword like this:
+  ```Swift
+  class Person {
+    var name: String
+    var age: Int = 0
+    init(name: String, age: Int) {
+      self.name = name  // use 'self' to distinguish class property
+      self.age = age    // from initializer argument with the same name
+    }
+    func description() -> String {
+      return "\(name), \(age)"
+    }
+  }
+// create an instance using custom initializer like this:
+var person = Person(name: "Bob", age: 42)
+person.description()
+```
+</details>
+
+<details> 
+  <summary>28. Will this code compile?
+```Swift
+  class User {
+    var role: String = "User"
+    var user_id: Int
+    init(role: String) {
+      self.role = role
+    }
+  }
+```
+  </summary>
+  
+  No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
+</details>
