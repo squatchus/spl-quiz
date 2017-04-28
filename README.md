@@ -354,7 +354,7 @@ person.description()
 
 <details> 
   <summary>28. Will this code compile?
-```Swift
+  ```Swift
   class User {
     var role: String = "User"
     var user_id: Int
@@ -362,7 +362,7 @@ person.description()
       self.role = role
     }
   }
-```
+  ```
   </summary>
   
   No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
