@@ -352,18 +352,18 @@ person.description()
 ```
 </details>
 
-<details> 
-  <summary><p>28. Will this code compile?
-  ```Swift
-  class User {
-    var role: String = "User"
-    var user_id: Int
-    init(role: String) {
-      self.role = role
-    }
+28. Will this code compile?
+```Swift
+class User {
+  var role: String = "User"
+  var user_id: Int
+  init(role: String) {
+    self.role = role
   }
-  ```</p>
-  </summary>
+}
+```
+<details> 
+  <summary>Answer:</summary>
   
   No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
 </details>
