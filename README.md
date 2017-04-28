@@ -282,7 +282,7 @@ This repository contains set of questions for a self-check based on the book "Th
     <summary>Answer:</summary>
 
     ```Swift
-   func funcThatTakes(function: ((Int) -> Int)) -> Bool  {
+    func funcThatTakes(function: ((Int) -> Int)) -> Bool  {
       function(2)
       return true
     }
