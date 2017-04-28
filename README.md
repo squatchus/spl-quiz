@@ -352,6 +352,7 @@ person.description()
 ```
 </details>
 
+
 28. Will this code compile?
 ```Swift
 class User {
@@ -362,8 +363,6 @@ class User {
   }
 }
 ```
-<details> 
-  <summary>Answer:</summary>
-  
-  No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
+<details>
+<summary>Answer:</summary>No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
 </details>
