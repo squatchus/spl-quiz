@@ -367,3 +367,4 @@ class User {
 <summary>Answer:</summary>
 <p>No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).</p>
 </details>
+No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
