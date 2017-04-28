@@ -12,54 +12,53 @@ This repository contains set of questions for a self-check based on the book "Th
 ## A Swift Tour
 
 1. Do you need a main() funtion as an entry point for the programm in Swift?
-
-<details> 
-  <summary>Answer:</summary>
-  
-  No, because global scope is used as an entry point itself.
-</details>
+   <details> 
+   <summary>Answer:</summary>
+   
+   No, because global scope is used as an entry point itself.
+   </details>
 
 ### Simple Values
 
-<details> 
-  <summary>2. How to declare constants and variables in Swift?</summary>
+2. How to declare constants and variables in Swift?
+   <details> 
+   <summary>Answer:</summary>
   
-  You declare it with a keywords **let** and **var** like this:
-```Swift
-var myVariable = 42
-let myConstant = 42
-```
-</details>
-
-<details> 
-  <summary>3. Do you have to assign the value of the constant, when you declare it?</summary>
+   You declare it with a keywords **let** and **var** like this:
+   ```Swift
+   var myVariable = 42
+   let myConstant = 42
+   ```
+   </details>
+3. Do you have to assign the value of the constant, when you declare it?
+   <details> 
+   <summary>Answer:</summary>
   
-  The value of a constant can be assigned later, but you must to assign it a value exactly once.
-</details>
-
-<details> 
-  <summary>4. How do you specify the type of constant or variable?</summary>
+   The value of a constant can be assigned later, but you must to assign it a value exactly once.
+   </details>
+4. How do you specify the type of constant or variable?
+   <details> 
+   <summary>Answer:</summary>
   
-  You write the type after it's name, separated by colon, like this:
-```Swift
-let explicitDouble: Double = 70
-```
-</details>
+   You write the type after it's name, separated by colon, like this:
+   ```Swift
+   let explicitDouble: Double = 70
+   ```
+   </details>
+5. Will this code compile?
+   ```Swift
+   let label = "The width is "
+   let width = 94
+   let widthLabel = label + width
+   ```
+   <details> 
+   <summary>Answer:</summary>
 
-<details> 
-  <summary>5. Will this code compile?
-```Swift
-let label = "The width is "
-let width = 94
-let widthLabel = label + width
-```
-</summary>
-
-  No, because **label** and **width** have different types. You need to convert it explicitly, like this:
-```Swift
-let widthLabel = label + String(width)
-```
-</details>
+   No, because **label** and **width** have different types. You need to convert it explicitly, like this:
+   ```Swift
+   let widthLabel = label + String(width)
+   ```
+   </details>
 
 <details> 
   <summary>6. What is the simpler way to include values in strings?</summary>
