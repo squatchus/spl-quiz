@@ -11,10 +11,10 @@ This repository contains set of questions for a self-check based on the book "Th
 
 ## A Swift Tour
 
-Questions:
+1. Do you need a main() funtion as an entry point for the programm in Swift?
 
 <details> 
-  <summary>1. Do you need a main() funtion as an entry point for the programm in Swift?</summary>
+  <summary>Answer:</summary>
   
   No, because global scope is used as an entry point itself.
 </details>
