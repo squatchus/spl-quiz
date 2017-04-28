@@ -364,7 +364,7 @@ class User {
 }
 ```
 <details>
-<summary>Answer:</summary>
-<p>No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).</p>
+  <summary>Answer:</summary>
+  No, because of __user_id__ property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
 </details>
-No, because of **user_id** property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
+No, because of __user_id__ property. Every property needs a value assigned - either in declaration (role) or in the initializer (user_id).
