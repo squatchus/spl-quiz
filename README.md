@@ -59,67 +59,65 @@ This repository contains set of questions for a self-check based on the book "Th
    let widthLabel = label + String(width)
    ```
    </details>
-
-<details> 
-  <summary>6. What is the simpler way to include values in strings?</summary>
+6. What is the simpler way to include values in strings?
+   <details> 
+   <summary>Answer:</summary>
   
-  You can use **\\()** inside the string and put some value or calculation in parenthesis, like this:
-```Swift
-let widthLabel = "The width is \(width) inches"
-```
-</details>
+   You can use **\\()** inside the string and put some value or calculation in parenthesis, like this:
+    ```Swift
+    let widthLabel = "The width is \(width) inches"
+    ```
+    </details>
+7. How do you create arrays and dictionaries? How do you access their elements?
+   <details> 
+   <summary>Answer:</summary>
 
-<details> 
-  <summary>7. How do you create arrays and dictionaries? How do you access their elements?</summary>
-  
-```Swift
-var colorsArray = ["red", "green", "blue"]
-colorsArray[1] = "yellow"
-var clothesDictionary = ["color": "blue", "size": "M"]
-clothesDictionary["size"] = "L"
-```
-</details>
+   ```Swift
+   var colorsArray = ["red", "green", "blue"]
+   colorsArray[1] = "yellow"
+   var clothesDictionary = ["color": "blue", "size": "M"]
+   clothesDictionary["size"] = "L"
+   ```
+   </details>
+8. What will this code do?
+   ```Swift
+   let const1 = [String]()
+   let const2 = [String: Float]()
+   ```
+   <details> 
+   <summary>Answer:</summary>
 
-<details> 
-  <summary>8. What will this code do?
-```Swift
-let const1 = [String]()
-let const2 = [String: Float]()
-```
-  </summary>
+   It will create an empty array of Strings and empty dictionary, which keys are Strings and values are Floats.
+   </details>
+9. Can you use this code to create empty arrays and dictionaries?
+   ```Swift
+   colorsArray = []
+   clothesDictionary = [:]
+   ```
+   <details> 
+   <summary>Answer:</summary>
 
-  It will create an empty array of Strings and empty dictionary, which keys are Strings and values are Floats.
-</details>
-
-<details> 
-  <summary>9. Can you use this code to create empty arrays and dictionaries?
-```Swift
-colorsArray = []
-clothesDictionary = [:]
-```
-  </summary>
-
-  Yes, but only if type information can be inferred.
-</details>
+   Yes, but only if type information can be inferred.
+   </details>
 
 ### Control Flow
 
-<details> 
-  <summary>10. What is wrong with this code?
-```Swift
-var score = 1
-if score print("Score isn't zero")
-```
-  </summary>
+10. What is wrong with this code?
+    ```Swift
+    var score = 1
+    if score print("Score isn't zero")
+    ```
+    <details> 
+    <summary>Answer:</summary>
 
-  Two things actually. First - in an **if** statement, the conditional must be a **Boolean** expression. Second - braces around the body are required. So, the code should look like this:
-```Swift
-var score = 1
-if score > 0 {
-  print("Score isn't zero")
-}
-```  
-</details>
+    Two things actually. First - in an **if** statement, the conditional must be a **Boolean** expression. Second - braces around the body are required. So, the code should look like this:
+    ```Swift
+    var score = 1
+    if score > 0 {
+      print("Score isn't zero")
+    }
+    ```  
+    </details>
 
 <details> 
   <summary>11. What does **?** after the type of value mean?
